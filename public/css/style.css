@@ -1,0 +1,80 @@
+*{
+    text-align: center;
+}
+.slider-image{
+    height: 90vh;
+    object-fit: cover;
+}
+.nav{
+    background-color: rgba(0, 0, 0, 0.63);
+}
+.section{
+    height: 90vh;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+.sec1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+}
+.sec2{
+    width: 30vw;
+    height: 30vh;
+    border: 5px solid greenyellow;
+    margin: 1vw;
+    background-color: rgba(159, 194, 240, 0.651);
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: white;
+    font-weight: bold;
+}
+.param{
+    margin: 3vw 0vw;
+}
+.abser{
+    margin: 0px;
+    height: 50vh;
+    color: white;
+    text-shadow: 1px 1p 2px black;
+    background-color: rgba(0, 0, 0, 0.514);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 40vw;
+    height: 60vh;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgb(154, 236, 76);
+}
+.in{
+    width: 50%;
+    height: 6vh;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 4px black inset;
+}
+.contactbtn{
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px black;
+    padding: 1vw;
+    border: none;
+}
+.contactbtn:hover{
+    box-shadow: 1px 1px 4px black inset;
+
+}
