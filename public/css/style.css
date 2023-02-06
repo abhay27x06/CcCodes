@@ -9,27 +9,32 @@
     background-color: rgba(0, 0, 0, 0.63);
 }
 .section{
-    height: 90vh;
+    height: 100vh;
     color: white;
     text-shadow: 1px 1px 3px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .sec1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 40vh;
+    height: 45vh;
     width: 100vw;
 }
 .sec2{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 30vw;
-    height: 35vh;
+    justify-content: space-around;
+    width: 20vw;
+    height: 40vh;
+    color: black;
+    text-shadow: none;
     box-shadow: 1px 1px 3px black;
     margin: 1vw;
-    background-color: rgba(5, 5, 5, 0.521);
-    border-radius: 2px;
+    background-color: white;
+    border-radius: 10px;
 }
 a{
     text-decoration: none;
@@ -42,18 +47,29 @@ a:hover{
 .param{
     margin: 3vw 0vw;
 }
+.aclass{
+    color: black;
+    text-shadow: none;
+    font-size: 2vw;
+    height: 4vh;
+}
+.aclass:hover{
+    color: black;
+    text-shadow: none;
+}
 .abser{
     margin: 0px;
     height: 50vh;
-    color: white;
-    text-shadow: 1px 1p 2px black;
-    background-color: rgba(0, 0, 0, 0.514);
+    color: black;
+    text-shadow: 1px 1p 3px black;
+    background-color: rgba(238, 226, 226, 0.514);
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 .box{
-    width: 40vw;
+    width: 25vw;
     height: 60vh;
     box-shadow: 1px 1px 4px black;
     border-radius: 5px;
@@ -62,32 +78,36 @@ a:hover{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    background-color: rgb(154, 236, 76);
+    background-color: rgba(0, 0, 0, 0.699);
 }
 .in{
-    width: 50%;
+    width: 70%;
     height: 6vh;
     border-radius: 5px;
     outline: none;
     border: none;
-    box-shadow: 1px 1px 4px black inset;
+    box-shadow: 2px 2px 6px black inset;
 }
 .contactbtn{
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 1px 1px 4px black;
-    padding: 1vw;
+    padding: 1vh;
     border: none;
+    background-color: white;
+    width: 8vw;
+    height: 7vh;
 }
 .contactbtn:hover{
     box-shadow: 1px 1px 4px black inset;
 
 }
 .serlogo{
-    width: 5vw;
-    height: 10vh;
+    width: 10vw;
+    height: 20vh;
     margin: auto;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: 1px 1px 3px black;
 }
 @media (max-width: 500px)
 {
@@ -98,16 +118,34 @@ a:hover{
         height: 120vh;
         flex-direction: column;
         width: 100vw;
+        margin-bottom: 50vh;
     }
     .sec2{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 50vw;
+        justify-content: space-around;
+        width: 60vw;
         height: 35vh;
         box-shadow: 1px 1px 3px black;
         margin: 1vw;
         background-color: rgba(5, 5, 5, 0.521);
         border-radius: 2px;
     }
+}
+.cplinks{
+    display: block;
+    padding-top: 4vh;
+    height: 20vh;
+    font-size: 3vw;
+    width: 100vw;
+    text-shadow: 2px 2px 4px black;
+}
+#link-1{
+    background-color: red;
+}
+#link-2{
+    background-color: chocolate;
+}
+#link-3{
+    background-color: green;
 }
