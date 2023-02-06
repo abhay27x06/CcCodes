@@ -17,10 +17,13 @@
     justify-content: space-around;
 }
 .sec1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 45vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+    height: 100vh;
     width: 100vw;
 }
 .sec2{
@@ -30,6 +33,7 @@
     width: 20vw;
     height: 40vh;
     color: black;
+    border: 2px solid black;
     text-shadow: none;
     box-shadow: 1px 1px 3px black;
     margin: 1vw;
@@ -103,38 +107,16 @@ a:hover{
 }
 .serlogo{
     width: 10vw;
-    height: 20vh;
+    height: 10vw;
     margin: auto;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 1px 1px 3px black;
 }
-@media (max-width: 500px)
-{
-    .sec1{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 120vh;
-        flex-direction: column;
-        width: 100vw;
-        margin-bottom: 50vh;
-    }
-    .sec2{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 60vw;
-        height: 35vh;
-        box-shadow: 1px 1px 3px black;
-        margin: 1vw;
-        background-color: rgba(5, 5, 5, 0.521);
-        border-radius: 2px;
-    }
-}
 .cplinks{
-    display: block;
-    padding-top: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 20vh;
     font-size: 3vw;
     width: 100vw;
@@ -148,4 +130,116 @@ a:hover{
 }
 #link-3{
     background-color: green;
+}
+@media (max-width: 1300px)
+{
+    .box{
+        width: 60vw;
+        height: 60vh;
+        box-shadow: 1px 1px 4px black;
+        border-radius: 5px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.699);
+    }
+    .contactbtn{
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px black;
+        padding: 1vh;
+        border: none;
+        background-color: white;
+        width: 16vw;
+        height: 7vh;
+        font-size: 2vw;
+    }
+    .in{
+        width: 70%;
+        height: 6vh;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        box-shadow: 2px 2px 6px black inset;
+        font-size: 3vw;
+    }
+}
+@media (max-width: 500px)
+{
+    .sec1{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+        height: 200vh;
+        width: 100vw;
+    }
+    .section{
+        height: 220vh;
+    }
+    .aclass{
+        color: black;
+        text-shadow: none;
+        font-size: 8vw;
+        height: 4vh;
+    }
+    .aclass:hover{
+        color: black;
+        text-shadow: none;
+    }
+    .sec2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 60vw;
+        height: 35vh;
+        box-shadow: 1px 1px 3px black;
+        margin: 1vw;
+        background-color: white;
+        border-radius: 15px;
+    }
+    .serh2{
+        font-size: 9vw;
+    }
+    .serlogo{
+        width: 35vw;
+        height: 35vw;
+        margin: auto;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 1px 1px 3px black;
+    }
+    .cplinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        font-size: 9vw;
+        width: 100vw;
+        text-shadow: 2px 2px 4px black;
+    }
+    .box{
+        width: 60vw;
+        height: 60vh;
+        box-shadow: 1px 1px 4px black;
+        border-radius: 5px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.699);
+    }
+    .contactbtn{
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px black;
+        padding: 1vh;
+        border: none;
+        background-color: white;
+        width: 18vw;
+        height: 7vh;
+    }
 }
